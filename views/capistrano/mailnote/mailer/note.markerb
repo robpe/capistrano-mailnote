@@ -1,0 +1,30 @@
+<%= @application.capitalize %>: [<%= @stage.upcase %>] [/<%= @repo_url.split('/').last %>]
+========================================================================================
+
+Deployment
+----------
+
+|Property |Data
+|---------|----------
+|Deployed at        | <%= (@release_time.empty? ? Time.now : @release_time).strftime("%A, %d %b %Y %l:%M %p") %>
+|Stage              | <%= @stage %>
+|Current revision   | <%= @current_revision %>
+|Previous revision  | <%= @previous_revision %>
+|Application url    | <%= @application_url %>
+|Branch             | <%= @branch %>
+|Release path       | <%= @release_path %>
+
+
+Release Notes
+-------------
+<% if @release_notes.empty? %>
+*No Changes since last deploy.*
+<% else %>
+|Commit | Message
+|-------|----------
+<% @release_notes.split("\n").each do |line| %>
+<% commit, *message = line.split(' ') %>
+|<%= commit %> | <%= message.join(' ') %>
+<% end %>
+
+<% end %>
