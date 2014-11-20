@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'capistrano-mailnote'
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.date        = '2014-11-18'
   s.summary     = ""
   s.description = "A gem for Capistrano email release note."
@@ -18,6 +18,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'markerb'
   s.add_runtime_dependency 'redcarpet', '>= 2.0'
 
-  s.homepage    = ''
   s.license     = 'MIT'
 end
