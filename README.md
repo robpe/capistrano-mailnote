@@ -3,6 +3,14 @@ capistrano-mailnote
 
 Capistrano Deployment email notification with commit messages based release notes. Mailer supports markdown templates.
 
+Installation
+------------
+`gem install capistrano-mailnote`
+
+or Gemfile:
+
+`gem 'capistrano-mailnote'`
+
 delpoy.rb configuration
 -----------------------
 
