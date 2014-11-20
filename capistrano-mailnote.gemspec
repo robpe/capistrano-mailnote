@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'capistrano-mailnote'
-  s.version     = '0.1'
+  s.version     = '0.1.1'
   s.date        = '2014-11-18'
-  s.summary     = "Hola!"
+  s.summary     = ""
   s.description = "A gem for Capistrano email release note."
   s.authors     = ["Robert Pozoga"]
   s.email       = 'robert.pozoga@gmail.com'
